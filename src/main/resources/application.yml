@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: kafka-custom-encryption-demo
+
+  kafka:
+    consumer:
+      group-id: your-group-id
+    bootstrap-servers: localhost:9092
+    properties:
+      schema.registry.url: http://localhost:8081
+      specific.avro.reader: true
+
+kafka:
+  topic:
+    name: person_event
+  encryption:
+    enabled: true
+    base64Key: b7ZiyEwFwp7JkqIBUuJjPA==
+
+

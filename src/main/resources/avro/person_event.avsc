@@ -1,0 +1,12 @@
+{
+  "type": "record",
+  "name": "PersonEvent",
+  "namespace": "com.kafka.custom.encryption.demo",
+  "fields": [
+    {"name": "idPerson", "type": "int"},
+    {"name": "action", "type": "string"},
+    {"name": "date", "type": {"type": "long", "logicalType": "timestamp-millis"}},
+    {"name": "name", "type": "string"},
+    {"name": "lastname", "type": "string"}
+  ]
+}
